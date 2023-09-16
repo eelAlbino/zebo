@@ -3,8 +3,9 @@
 </p>
 <p>
 Установка стандартная для laravel. После разворачивания репо необходимо выполнить следующие команды:
-composer install
-php artisan key:generate
+<br>
+composer install<br>
+php artisan key:generate<br>
 php artisan migrate
 </p>
 <p>
@@ -20,6 +21,9 @@ php artisan migrate
 <p>
 По поводу задания, я бы не сказал, что оно на авторизацию, скорее на актуализацию данных пользователя.
 Хотя, возможно я его неправильно понимаю.
+</p>
+<p>
+По времени ушло часа 4
 </p>
 <p>
 Ссылка на тестовое задание: https://docs.google.com/document/d/1l8RZGSZJo-3p5o8E8v8CcuLIeuUUf9hH/edit
