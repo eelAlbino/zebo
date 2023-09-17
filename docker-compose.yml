@@ -1,0 +1,24 @@
+version: '3.8'
+services:
+  php:
+    image: repox/laravel-dev-php:7.4
+    volumes:
+      - .:/var/www/html
+    working_dir: /var/www/html
+  nginx:
+    image: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - .:/var/www/html
+      - ./docker/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+  db:
+    image: mysql:8.0
+    links:
+      - php
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: ""
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_DATABASE: zebo
